@@ -39,14 +39,14 @@ appConfig:
   auth:
     enableGuestAccess: false
     users:
-      - user: shivanshu
-        hash: 3c3673cdc0ae0398c82744759f589ebd0228952fa19b0956fe083ccfa3d8ea34
-        password: Shivanshu@8787
+      - user:
+        hash:
+        password:
         type: admin
-    enableOidc: true
+    enableOidc: false
     oidc:
-      adminRole: 'true'
-      adminGroup: 'true'
+      adminRole: 'false'
+      adminGroup: 'false'
     enableHeaderAuth: false
     headerAuth:
       userHeader: REMOTE_USER
