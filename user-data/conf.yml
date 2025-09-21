@@ -43,7 +43,7 @@ appConfig:
         hash: 3c3673cdc0ae0398c82744759f589ebd0228952fa19b0956fe083ccfa3d8ea34
         password: Shivanshu@8787
         type: admin
-    enableOidc: false
+    enableOidc: true
     oidc:
       adminRole: 'true'
       adminGroup: 'true'
