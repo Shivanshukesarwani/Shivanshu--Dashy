@@ -39,10 +39,7 @@ appConfig:
   auth:
     enableGuestAccess: false
     users:
-      - user:
-        hash:
-        password:
-        type: admin
+      - user: []
     enableOidc: false
     oidc:
       adminRole: 'false'
