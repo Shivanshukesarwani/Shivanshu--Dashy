@@ -1,47 +1,128 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
   title: Dashy
   description: Welcome to your new dashboard!
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
+      path: https://dashy.to/docs
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: adventure
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Getting Started
+    icon: fas fa-rocket
+    items:
+      - &ref_0
+        title: Dashy Live
+        description: Development a project management links for Dashy
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        url: https://live.dashy.to/
+        target: newtab
+        id: 0_1481_dashylive
+      - &ref_1
+        title: GitHub
+        description: Source Code, Issues and Pull Requests
+        url: https://github.com/lissy93/dashy
+        icon: favicon
+        id: 1_1481_github
+      - &ref_2
+        title: Docs
+        description: Configuring & Usage Documentation
+        provider: Dashy.to
+        icon: far fa-book
+        url: https://dashy.to/docs
+        id: 2_1481_docs
+      - &ref_3
+        title: Showcase
+        description: See how others are using Dashy
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        icon: far fa-grin-hearts
+        id: 3_1481_showcase
+      - &ref_4
+        title: Config Guide
+        description: See full list of configuration options
+        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+        icon: fas fa-wrench
+        id: 4_1481_configguide
+      - &ref_5
+        title: Support
+        description: Get help with Dashy, raise a bug, or get in contact
+        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
+        icon: far fa-hands-helping
+        id: 5_1481_support
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+  - name: Online Manipal
+    icon: >-
+      https://www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/OM_Logo.svg
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_6
+        title: Student Portal
+        icon: >-
+          https://www.onlinemanipal.com/wp-content/uploads/2023/03/MUJ-2.png.webp
+        url: https://student.onlinemanipal.com/s/
+        target: newtab
+        id: 0_1351_studentportal
+      - &ref_7
+        title: Learning Portal
+        icon: >-
+          https://www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/OM_Logo.svg
+        url: https://learning.onlinemanipal.com/d2l/home
+        target: newtab
+        id: 1_1351_learningportal
+      - &ref_8
+        title: Coursera
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/coursera.png
+        url: >-
+          https://www.coursera.org/programs/muj-online-bba-batch-10-v8ua2?authProvider=unext-manipal
+        target: newtab
+        id: 2_1351_coursera
+      - &ref_9
+        title: Edzter
+        icon: >-
+          https://www-edzter-com.muj.remotlog.com/images/logo__blue/blue-logo@2x.png
+        url: https://www-edzter-com.muj.remotlog.com/
+        target: newtab
+        id: 3_1351_edzter
+      - &ref_10
+        title: Outlook
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/microsoft-outlook.svg
+        url: https://outlook.office.com/mail/
+        target: newtab
+        id: 4_1351_outlook
+    filteredItems:
+      - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
+  - name: Design
+    icon: https://cdn3.iconfinder.com/data/icons/feather-5/24/pen-tool-512.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_11
+        title: Freepik
+        icon: https://cdn-teams-slug.flaticon.com/freepik.jpg
+        url: https://www.freepik.com/
+        target: newtab
+        id: 0_602_freepik
+    filteredItems:
+      - *ref_11
