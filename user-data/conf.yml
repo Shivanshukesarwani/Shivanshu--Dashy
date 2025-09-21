@@ -38,11 +38,15 @@ appConfig:
     hideFooter: false
   auth:
     enableGuestAccess: false
-    users: []
+    users:
+      - user: shivanshu
+        hash: 3c3673cdc0ae0398c82744759f589ebd0228952fa19b0956fe083ccfa3d8ea34
+        password: Shivanshu@8787
+        type: admin
     enableOidc: false
     oidc:
-      adminRole: 'false'
-      adminGroup: 'false'
+      adminRole: 'true'
+      adminGroup: 'true'
     enableHeaderAuth: false
     headerAuth:
       userHeader: REMOTE_USER
@@ -64,17 +68,18 @@ sections:
     icon: fas fa-rocket
     items:
       - &ref_0
-        title: Dashy Live
-        description: Development a project management links for Dashy
-        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        title: Youtube
+        description: ''
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/youtube.svg
         url: https://live.dashy.to/
         target: newtab
         id: 0_1481_dashylive
       - &ref_1
         title: GitHub
         description: Source Code, Issues and Pull Requests
-        url: https://github.com/lissy93/dashy
         icon: favicon
+        url: https://github.com/shivanshukesarwani
         id: 1_1481_github
       - &ref_2
         title: Docs
@@ -84,10 +89,11 @@ sections:
         url: https://dashy.to/docs
         id: 2_1481_docs
       - &ref_3
-        title: Showcase
-        description: See how others are using Dashy
-        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-        icon: far fa-grin-hearts
+        title: Gmail
+        description: Google Main
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gmail.svg
+        url: https://mail.google.com/
+        target: newtab
         id: 3_1481_showcase
       - &ref_4
         title: Config Guide
