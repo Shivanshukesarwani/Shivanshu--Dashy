@@ -38,8 +38,7 @@ appConfig:
     hideFooter: false
   auth:
     enableGuestAccess: false
-    users:
-      - user: []
+    users: []
     enableOidc: false
     oidc:
       adminRole: 'false'
@@ -65,18 +64,17 @@ sections:
     icon: fas fa-rocket
     items:
       - &ref_0
-        title: Youtube
-        description: ''
-        icon: >-
-          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/youtube.svg
+        title: Dashy Live
+        description: Development a project management links for Dashy
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
         url: https://live.dashy.to/
         target: newtab
         id: 0_1481_dashylive
       - &ref_1
         title: GitHub
         description: Source Code, Issues and Pull Requests
+        url: https://github.com/lissy93/dashy
         icon: favicon
-        url: https://github.com/shivanshukesarwani
         id: 1_1481_github
       - &ref_2
         title: Docs
@@ -86,11 +84,10 @@ sections:
         url: https://dashy.to/docs
         id: 2_1481_docs
       - &ref_3
-        title: Gmail
-        description: Google Main
-        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gmail.svg
-        url: https://mail.google.com/
-        target: newtab
+        title: Showcase
+        description: See how others are using Dashy
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        icon: far fa-grin-hearts
         id: 3_1481_showcase
       - &ref_4
         title: Config Guide
